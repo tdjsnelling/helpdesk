@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Helpdesk - Home</title>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">Helpdesk</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Existing tickets <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="new.html">New Ticket</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="analytics.html">Analytics</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Current user:</span>
+					<select class="custom-select">
+						<option>Tom Snelling</option>
+						<option>Dan Page</option>
+						<option>Adam Morley</option>
+						<option>Timo Kiukkanen</option>
+						<option>Joe Cant</option>
+						<option>Ghassan Ebrahim</option>
+					</select>
+				</div>
+			</form>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row" style="margin-bottom: 30px;">
+			<div class="col-6">
+				<h2>Tickets</h2>
+			</div>
+			<div class="col-6">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Find a problem...">
+					<span class="input-group-btn">
+						<button class="btn btn-primary" type="button">Search</button>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="list-group">
+					<div class="list-group-item flex-column align-items-start list-heading">
+						<div class="d-flex flex-row">
+							<div class="p-2 col"><b>Problem number</b></div>
+							<div class="p-2 col"><b>Problem type</b></div>
+							<div class="p-2 col"><b>Problem summary</b></div>
+							<div class="p-2 col"><b>Time submitted</b></div>
+							<div class="p-2 col"><b>Status</b></div>
+						</div>
+					</div>
+
+					<a href="issue.html" class="list-group-item list-group-item-action flex-column align-items-start">
+						<div class="d-flex flex-row">
+							<div class="p-2 col"><b>1234</b></div>
+							<div class="p-2 col">Printer issue</div>
+							<div class="p-2 col">Printer is jammed</div>
+							<div class="p-2 col">10-12-2017 15:00</div>
+							<div class="p-2 col"><span class="green">Ongoing</span></div>
+						</div>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						<div class="d-flex flex-row">
+							<div class="p-2 col"><b>9999</b></div>
+							<div class="p-2 col">Software issue</div>
+							<div class="p-2 col">Web browser not opening</div>
+							<div class="p-2 col">11-10-2017 09:00</div>
+							<div class="p-2 col"><span class="orange">Pending</span></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

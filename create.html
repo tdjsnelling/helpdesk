@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Helpdesk - Home</title>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="about.html">MyNuQuery</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">New Query</a></li>
+            <li><a href="existing.html">Existing Query</a></li>
+            <li><a href="analytics.html">My Analytics</a></li>
+        </ul>
+
+        
+
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+            <button id = "userButton" class="btn"><span class="form-group-addon"><i class="glyphicon glyphicon-user"></i></span></button>
+            <select class="form-control" id="userSelect">
+              <option>Dan</option>
+              <option>Timo</option>
+              <option>Ghassan</option>
+              <option>Adam</option>
+              <option>Tom</option>
+              <option>Joe</option>
+            </select>
+          </div>
+          </form>
+      </div>
+  </nav>
+  <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">New Query</a>
+        </div></div>
+  </nav>
+  <div class="container">
+      <form>
+          <br>
+          <div class="form-group">
+          <label for="userName">Customer Name:</label>
+          <input type="text" class="form-control" id="userName">
+          </div>
+          <div class="form-group">
+          <label for="staffNumber">Staff Number:</label>
+          <input type="text" class="form-control" id="staffNumber">
+          </div>
+          <div class="form-group">
+          <label for="staffEmail">Contact Email:</label>
+          <input type="email" class="form-control" id="staffEmail">
+          </div>
+          
+
+      </form>
+
+
+
+      <ul class="nav nav-tabs">
+          
+          <br><label>Select Issue Type:</label><br>
+          <li class="active"><a data-toggle="tab" href="#Hardware">Hardware</a></li>
+          <li><a data-toggle="tab" href="#Software">Software</a></li>
+          <li><a data-toggle="tab" href="#OperatingSystem">Operating system</a></li>
+          <li><a data-toggle="tab" href="#Other">Other</a></li>
+
+      </ul>
+
+      <!-- HARDWARE TAB -->
+
+      <div class="tab-content">
+          <div id="Hardware" class="tab-pane fade in active">
+
+
+          <form>
+            <br>
+            <div class="form-group">
+            <label for="userName">Hardware Serial Number:</label>
+            <input type="text" class="form-control" id="HardwareSerialNumber">
+            </div>
+            <div class="form-group">
+            <label for="staffNumber">Issue:</label>
+            <textarea class="form-control" rows="5" id="HardwareIssue"></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+            <input type="submit" class="form-control" id="HardwareSubmit">
+            </div>
+
+          </form>
+            
+
+          </div>
+
+          <!-- SOFTWARE TAB -->
+
+          <div id="Software" class="tab-pane fade">
+
+          <form>
+            <br>
+            <div class="form-group">
+            <label for="userName">Software Name:</label>
+            <input type="text" class="form-control" id="SoftwareName">
+            </div>
+            <div class="form-group">
+            <label for="userName">Software Licence Code:</label>
+            <input type="text" class="form-control" id="SoftwareIssueNumber">
+            </div>
+            <div class="form-group">
+            <label for="staffNumber">Issue:</label>
+            <textarea class="form-control" rows="5" id="SoftwareIssue"></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+            <input type="submit" class="form-control" id="SoftwareSubmit">
+            </div>
+
+          </form>
+          
+          </div>
+
+          <!-- OS TAB -->
+
+          <div id="OperatingSystem" class="tab-pane fade">
+
+          <form>
+            <br>
+            <div class="form-group">
+            <label for="userName">Operating System Name:</label>
+            <input type="text" class="form-control" id="OSName">
+            </div>
+            <div class="form-group">
+            <label for="userName">Operating System Version Number:</label>
+            <input type="text" class="form-control" id="OSVersionNumber">
+            </div>
+            <div class="form-group">
+            <label for="staffNumber">Issue:</label>
+            <textarea class="form-control" rows="5" id="OSIssue"></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+            <input type="submit" class="form-control" id="OSSubmit">
+            </div>
+
+          </form>
+            
+          </div>
+
+          <!-- Other Issue Tab -->
+
+          <div id="Other" class="tab-pane fade">
+
+          <form>
+            <br>
+            <div class="form-group">
+            <label for="userName">Affected System:</label>
+            <input type="text" class="form-control" id="OtherName">
+            </div>
+            <div class="form-group">
+            <label for="staffNumber">Issue:</label>
+            <textarea class="form-control" rows="5" id="OtherIssue"></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+            <input type="submit" class="form-control" id="OtherSubmit">
+            </div>
+
+
+          </form>
+
+          </div>
+
+      </div>
+
+
+  </div>
+</body>
+</html>

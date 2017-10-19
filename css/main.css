@@ -1,0 +1,22 @@
+.container, .container-fluid {
+	margin-top: 20px;
+}
+
+.list-heading {
+	background: #f0f0f0;
+}
+
+.custom-select {
+	display: block;
+	border-radius: 0 .25rem .25rem 0;
+}
+
+.green {
+	color: #2ecc71;
+}
+.orange {
+	color: #f39c12;
+}
+.red {
+	color: #e74c3c;
+}

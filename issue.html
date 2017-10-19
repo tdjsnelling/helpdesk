@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Helpdesk - Home</title>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">Helpdesk</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Existing tickets</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="new.html">New Ticket</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="analytics.html">Analytics</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Current user:</span>
+					<select class="custom-select">
+						<option>Tom Snelling</option>
+						<option>Dan Page</option>
+						<option>Adam Morley</option>
+						<option>Timo Kiukkanen</option>
+						<option>Joe Cant</option>
+						<option>Ghassan Ebrahim</option>
+					</select>
+				</div>
+			</form>
+		</div>
+	</nav>
+
+  <div class="container">
+      <form>
+          <br>
+          <div class="form-group">
+          <label for="userName">Customer Name:</label>
+          <input type="text" class="form-control" id="userName" value="Fred Wills" disabled>
+          </div>
+          <div class="form-group">
+          <label for="staffNumber">Staff Number:</label>
+          <input type="text" class="form-control" id="staffNumber" value="34572" disabled>
+          </div>
+          <div class="form-group">
+          <label for="staffEmail">Contact Email:</label>
+          <input type="email" class="form-control" id="staffEmail" value="FredWills@IDontWorkInIT.com" disabled>
+          </div>
+          <div class="form-group">
+          <label for="staffEmail">Issue Type:</label>
+          <input type="email" class="form-control" id="staffEmail" value="Hardware" disabled>
+          </div>
+          <div class="form-group">
+            <label for="comment">Issue:</label>
+            <textarea rows = "5" class="form-control" rows="5" id="comment" disabled>Cant find where to plug in mouse</textarea>
+          </div>
+          <div class="form-group">
+            <label for="comment">Additional Notes:</label>
+            <textarea rows = "5" class="form-control" rows="5" id="comment">Currently sending over an IT grunt.</textarea>
+          </div>
+          <div class="form-group">
+          <label for="staffNumber">Issue Resolved:</label>
+          <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+          <label class="radio-inline"><input type="radio" name="optradio">No</label>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="form-control" id="HardwareSubmit">
+          </div>
+      </form>
+
+
+
+
+      </div>
+
+
+  </div>
+</body>
+</html>
