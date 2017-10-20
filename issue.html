@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Helpdesk - Home</title>
+	<title>Helpdesk - View issue</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/view-issue.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -49,39 +51,71 @@
 		<div class="row">
 			<div class="col">
 				<form>
+					<h2 style="display: inline;">Status: <span class="green">Ongoing</span></h2>
+					<h2 style="display: inline; float: right;"> Created at: <span id="createdAt">20-10-2017 09:00</span></h2>
+					<hr> 
+
 					<div class="form-group">
-						<label for="userName">Customer Name:</label>
-						<input type="text" class="form-control" id="userName" value="Fred Wills" disabled>
+						<div class="row">
+							<div class="col">
+								<label for="callerName">Caller name</label>
+								<input type="text" class="form-control" id="callerName" value="John Smith" disabled>
+							</div>
+							<div class="col">
+								<label for="createdBy">Created by</label>
+								<input type="text" class="form-control" id="createdBy" value="Tom Snelling" disabled>
+							</div>
+						</div>
 					</div>
 					<div class="form-group">
-						<label for="staffNumber">Staff Number:</label>
-						<input type="text" class="form-control" id="staffNumber" value="34572" disabled>
+						<label for="staffEmail">Contact email</label>
+						<input type="text" class="form-control" id="staffEmail" value="john.smith@internalemail.com" disabled>
 					</div>
 					<div class="form-group">
-						<label for="staffEmail">Contact Email:</label>
-						<input type="email" class="form-control" id="staffEmail" value="FredWills@IDontWorkInIT.com" disabled>
+						<label for="staffEmail">Issue classification</label>
+						<input type="text" class="form-control" id="staffEmail" value="Hardware" disabled>
 					</div>
 					<div class="form-group">
-						<label for="staffEmail">Issue Type:</label>
-						<input type="email" class="form-control" id="staffEmail" value="Hardware" disabled>
+						<label for="userName">Hardware serial number</label>
+						<input type="text" class="form-control" id="HardwareSerialNumber" value="123890XYZ" disabled>
 					</div>
 					<div class="form-group">
-						<label for="comment">Issue:</label>
-						<textarea rows = "5" class="form-control" rows="5" id="comment" disabled>Cant find where to plug in mouse</textarea>
+						<label for="operatingsystem">Operating system</label>
+		    			<input type="text" class="form-control" id="operatingsystem" disabled>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="form-group">
+								<label for="software-name">Software name</label>
+				    			<input type="text" class="form-control" id="software-name" disabled>
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group">
+								<label for="software-version">Software version</label>
+				    			<input type="text" class="form-control" id="software-version" disabled>
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group">
+								<label for="userName">Software license code</label>
+								<input type="text" class="form-control" id="SoftwareIssueNumber" disabled>
+							</div>
+						</div>
 					</div>
 					<div class="form-group">
-						<label for="comment">Additional Notes:</label>
-						<textarea rows = "5" class="form-control" rows="5" id="comment">Currently sending over an IT grunt.</textarea>
+						<label for="problem-summary">Problem summary</label>
+		    			<input type="text" class="form-control" id="problem-summary" value="Documents not printing." disabled>
 					</div>
 					<div class="form-group">
-						<label for="staffNumber">Issue Resolved:</label>
-						<label class="radio-inline"><input type="radio" name="optradio">Yes</label>
-						<label class="radio-inline"><input type="radio" name="optradio">No</label>
-					</div>
-					<div class="form-group">
-						<input type="submit" class="form-control" id="HardwareSubmit">
+						<label for="staffNumber">Problem details</label>
+						<textarea class="form-control" rows="5" id="SoftwareIssue" disabled>Documents are successfully being sent to the printer, but nothing is ever printed.</textarea>
 					</div>
 				</form>
+				<div style="float: right;">
+					<button type="button" class="btn btn-secondary" id="button-edit">Edit this issue</button>
+					<button type="button" class="btn btn-primary" id="button-resolved">Mark as resolved</button>
+				</div>
 			</div>
 		</div>
 	</div>

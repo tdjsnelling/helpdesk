@@ -8,7 +8,7 @@
 		callerEmail: "john.smith@internalemail.com"
 	},
 	details: {
-		callType: "new",
+		isNewProblem: true,
 		problemClassification: "hardware",
 		problemType: "Printer issue",
 		serialNumber: "123890XYZ",

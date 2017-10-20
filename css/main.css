@@ -11,6 +11,11 @@
 	border-radius: 0 .25rem .25rem 0;
 }
 
+.col-overflow {
+	white-space: nowrap;
+	text-overflow: ellipsis; 
+}
+
 .green {
 	color: #2ecc71;
 }

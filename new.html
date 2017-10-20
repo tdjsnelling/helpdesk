@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Helpdesk - New ticket</title>
+	<title>Helpdesk - New issue</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
 
 	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/new-ticket.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
@@ -95,11 +95,8 @@
 		    					<input class="form-control" id="problem-summary">
 							</div>
 							<div class="form-group">
-								<label for="staffNumber">Issue</label>
+								<label for="staffNumber">Problem details</label>
 								<textarea class="form-control" rows="5" id="HardwareIssue"></textarea>
-							</div>
-							<div class="form-group">
-								<input type="submit" class="form-control" id="HardwareSubmit">
 							</div>
 						</form>
 					</div>
@@ -135,15 +132,13 @@
 		    					<input class="form-control" id="problem-summary">
 							</div>
 							<div class="form-group">
-								<label for="staffNumber">Issue</label>
+								<label for="staffNumber">Problem details</label>
 								<textarea class="form-control" rows="5" id="SoftwareIssue"></textarea>
-							</div>
-							<div class="form-group">
-								<input type="submit" class="form-control" id="SoftwareSubmit">
 							</div>
 						</form>
 					</div>
 				</div>
+				<button type="button" class="btn btn-primary" id="button-create" style="width: 100%;">Create issue</button>
 			</div>
 		</div>
 	</div>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Helpdesk - Home</title>
+	<title>Helpdesk - Analytics</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
@@ -45,48 +46,71 @@
 		</div>
 	</nav>
 
-	
 	<div class="container">
-		<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-			<li class="nav-item">
-				<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#open-queries" role="tab" aria-controls="pills-home" aria-expanded="true">Open tickets</a>
-			</li>
-		</ul>
+		<div class="row">
+			<div class="col">
+				<h2>Analytics</h2>
+				<hr>
 
-		<div class="tab-content">
-			<div class="tab-pane fade active show" id="open-queries" role="tabpanel">
-				<div class= "panel panel-default">
-					<table class="table table-hover">
-						<thead>
-							<tr>
-								<th>Operator name</th>
-								<th>Open queries</th>
-								<th>Closed queries</th>
-								<th>Speciality</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>John</td>
-								<td>0</td>
-								<td>6</td>
-								<td>Hardware</td>
-							</tr>
-							<tr>
-								<td>Jim</td>
-								<td>3</td>
-								<td>2</td>
-								<td>Software</td>
-							</tr>
-							<tr>
-								<td>Amy</td>
-								<td>8</td>
-								<td>3</td>
-								<td>Hardware</td>           
-							</tr>
-						</tbody>
-					</table>
-				</div>		
+				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#open-queries" role="tab" aria-controls="pills-home" aria-expanded="true">Open tickets</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#other-stats" role="tab" aria-controls="pills-home" aria-expanded="true">Other statistics</a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane fade active show" id="open-queries" role="tabpanel">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Operator name</th>
+									<th>Open queries</th>
+									<th>Closed queries</th>
+									<th>Speciality</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>John</td>
+									<td>0</td>
+									<td>6</td>
+									<td>Hardware</td>
+								</tr>
+								<tr>
+									<td>Jim</td>
+									<td>3</td>
+									<td>2</td>
+									<td>Software</td>
+								</tr>
+								<tr>
+									<td>Amy</td>
+									<td>8</td>
+									<td>3</td>
+									<td>Hardware</td>           
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="tab-pane fade active" id="other-stats" role="tabpanel">
+						<div class="row">
+							<div class="col">
+								<h1 class="display-3">26</h1>
+								<p class="lead">Total open issues</p>
+							</div>
+							<div class="col">
+								<h1 class="display-3">52</h1>
+								<p class="lead">Total closed issues</p>
+							</div>
+							<div class="col">
+								<h1 class="display-3">6</h1>
+								<p class="lead">Current operators</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
