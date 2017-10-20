@@ -1,0 +1,28 @@
+{
+	id: 1234,
+	createdAt: 1508502140338,
+	status: "ongoing",
+	people: {
+		createdBy: "Tom Snelling",
+		callerName: "John Smith",
+		callerEmail: "john.smith@internalemail.com"
+	},
+	details: {
+		callType: "new",
+		problemClassification: "hardware",
+		problemType: "Printer issue",
+		serialNumber: "123890XYZ",
+		operatingSystem: null,
+		softwareName: null,
+		softwareVersion: null, 
+		softwareLicense: null,
+		problemSummary: "Documents not printing",
+		problemDetail: "Documents are successfully being sent to the printer, but nothing is ever printed."
+	},
+	solution: {
+		isSolved: false,
+		solvedAt: null,
+		solvedBy: null,
+		solutionDetail: null
+	}
+}

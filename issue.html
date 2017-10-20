@@ -4,6 +4,7 @@
 	<title>Helpdesk - Home</title>
 
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -44,49 +45,45 @@
 		</div>
 	</nav>
 
-  <div class="container">
-      <form>
-          <br>
-          <div class="form-group">
-          <label for="userName">Customer Name:</label>
-          <input type="text" class="form-control" id="userName" value="Fred Wills" disabled>
-          </div>
-          <div class="form-group">
-          <label for="staffNumber">Staff Number:</label>
-          <input type="text" class="form-control" id="staffNumber" value="34572" disabled>
-          </div>
-          <div class="form-group">
-          <label for="staffEmail">Contact Email:</label>
-          <input type="email" class="form-control" id="staffEmail" value="FredWills@IDontWorkInIT.com" disabled>
-          </div>
-          <div class="form-group">
-          <label for="staffEmail">Issue Type:</label>
-          <input type="email" class="form-control" id="staffEmail" value="Hardware" disabled>
-          </div>
-          <div class="form-group">
-            <label for="comment">Issue:</label>
-            <textarea rows = "5" class="form-control" rows="5" id="comment" disabled>Cant find where to plug in mouse</textarea>
-          </div>
-          <div class="form-group">
-            <label for="comment">Additional Notes:</label>
-            <textarea rows = "5" class="form-control" rows="5" id="comment">Currently sending over an IT grunt.</textarea>
-          </div>
-          <div class="form-group">
-          <label for="staffNumber">Issue Resolved:</label>
-          <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
-          <label class="radio-inline"><input type="radio" name="optradio">No</label>
-          </div>
-          <div class="form-group">
-            <input type="submit" class="form-control" id="HardwareSubmit">
-          </div>
-      </form>
-
-
-
-
-      </div>
-
-
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<form>
+					<div class="form-group">
+						<label for="userName">Customer Name:</label>
+						<input type="text" class="form-control" id="userName" value="Fred Wills" disabled>
+					</div>
+					<div class="form-group">
+						<label for="staffNumber">Staff Number:</label>
+						<input type="text" class="form-control" id="staffNumber" value="34572" disabled>
+					</div>
+					<div class="form-group">
+						<label for="staffEmail">Contact Email:</label>
+						<input type="email" class="form-control" id="staffEmail" value="FredWills@IDontWorkInIT.com" disabled>
+					</div>
+					<div class="form-group">
+						<label for="staffEmail">Issue Type:</label>
+						<input type="email" class="form-control" id="staffEmail" value="Hardware" disabled>
+					</div>
+					<div class="form-group">
+						<label for="comment">Issue:</label>
+						<textarea rows = "5" class="form-control" rows="5" id="comment" disabled>Cant find where to plug in mouse</textarea>
+					</div>
+					<div class="form-group">
+						<label for="comment">Additional Notes:</label>
+						<textarea rows = "5" class="form-control" rows="5" id="comment">Currently sending over an IT grunt.</textarea>
+					</div>
+					<div class="form-group">
+						<label for="staffNumber">Issue Resolved:</label>
+						<label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+						<label class="radio-inline"><input type="radio" name="optradio">No</label>
+					</div>
+					<div class="form-group">
+						<input type="submit" class="form-control" id="HardwareSubmit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
