@@ -17,7 +17,8 @@
 		softwareVersion: null, 
 		softwareLicense: null,
 		problemSummary: "Documents not printing",
-		problemDetail: "Documents are successfully being sent to the printer, but nothing is ever printed."
+		problemDetail: "Documents are successfully being sent to the printer, but nothing is ever printed.",
+		tags: "printer, hardware, jammed"
 	},
 	solution: {
 		isSolved: false,

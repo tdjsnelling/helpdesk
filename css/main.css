@@ -6,14 +6,25 @@
 	background: #f0f0f0;
 }
 
+#user-select {
+	border-radius: 0 .25rem .25rem 0;
+}
+
 .custom-select {
 	display: block;
-	border-radius: 0 .25rem .25rem 0;
 }
 
 .col-overflow {
 	white-space: nowrap;
 	text-overflow: ellipsis; 
+}
+
+.tags {
+	display: block;
+	margin-top: 10px;
+}
+.tags > .badge {
+	padding: 4px 6px;
 }
 
 .green {
