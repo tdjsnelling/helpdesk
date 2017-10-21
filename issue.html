@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
 		<a class="navbar-brand" href="#">Helpdesk</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -49,17 +49,18 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col">
+			<div class="col-4 problem-metadata">
+				<h2>Problem: <span id="problemId">1234</span></h2>
+				<h4>Status: <span class="green">Ongoing</span></h4>
+				<h4>Created at: <span id="createdAt">20-10-2017 09:00</span></h4>
+				<div class="tags">
+					<span class="badge badge-secondary">printer</span>
+					<span class="badge badge-secondary">hardware</span>
+					<span class="badge badge-secondary">jammed</span>
+				</div>
+			</div>
+			<div class="col-8">
 				<form>
-					<h2 style="display: inline;">Status: <span class="green">Ongoing</span></h2>
-					<h2 style="display: inline; float: right;"> Created at: <span id="createdAt">20-10-2017 09:00</span></h2>
-					<div class="tags">
-						<span class="badge badge-secondary">printer</span>
-						<span class="badge badge-secondary">hardware</span>
-						<span class="badge badge-secondary">jammed</span>
-					</div>
-					<hr> 
-
 					<div class="form-group">
 						<div class="row">
 							<div class="col">

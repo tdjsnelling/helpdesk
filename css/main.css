@@ -1,5 +1,6 @@
 .container, .container-fluid {
 	margin-top: 20px;
+	padding-bottom: 40px;
 }
 
 .list-heading {
@@ -25,6 +26,10 @@
 }
 .tags > .badge {
 	padding: 4px 6px;
+}
+
+.problem-metadata > * {
+	margin-bottom: 15px;
 }
 
 .green {
