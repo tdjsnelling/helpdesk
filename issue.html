@@ -49,17 +49,21 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-4 problem-metadata">
-				<h2>Problem: <span id="problemId">1234</span></h2>
-				<h4>Status: <span class="green">Ongoing</span></h4>
-				<h4>Created at: <span id="createdAt">20-10-2017 09:00</span></h4>
+			<div class="col-3 problem-metadata">
+				<h2>#<span id="problemId">1234</span></h2>
+				<h4>Status: <span class="orange">Ongoing</span></h4>
+				<p>Created at: <span id="createdAt">20-10-2017 09:00</span></p>
 				<div class="tags">
 					<span class="badge badge-secondary">printer</span>
 					<span class="badge badge-secondary">hardware</span>
 					<span class="badge badge-secondary">jammed</span>
 				</div>
+				<hr>
+
+				<button type="button" class="btn btn-secondary w-100" id="button-edit">Edit this issue</button>
+				<button type="button" class="btn btn-primary w-100" id="button-resolved">Mark as resolved</button>
 			</div>
-			<div class="col-8">
+			<div class="col-9">
 				<form>
 					<div class="form-group">
 						<div class="row">
@@ -118,10 +122,6 @@
 						<textarea class="form-control" rows="5" id="SoftwareIssue" disabled>Documents are successfully being sent to the printer, but nothing is ever printed.</textarea>
 					</div>
 				</form>
-				<div style="float: right;">
-					<button type="button" class="btn btn-secondary" id="button-edit">Edit this issue</button>
-					<button type="button" class="btn btn-primary" id="button-resolved">Mark as resolved</button>
-				</div>
 			</div>
 		</div>
 	</div>
