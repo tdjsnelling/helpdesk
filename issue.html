@@ -11,6 +11,7 @@
 	<script src="js/common.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -48,12 +49,42 @@
 		</div>
 	</nav>
 
+	<div class="modal fade" id="resolved-modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title"><i class="fa fa-check"></i> Mark this issue as resolved</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="solved-by">Solved by</label>
+			    			<input type="text" class="form-control" id="solved-by">
+						</div>
+						<div class="form-group">
+							<label for="resolution-detail">Problem details</label>
+							<textarea class="form-control" rows="8" id="resolution-detail"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Save resolution</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-3 problem-metadata">
-				<h2>#<span id="problemId">1234</span></h2>
+				<h2><i class="fa fa-ticket"></i> #<span id="problemId">1234</span></h2>
 				<h4>Status: <span class="orange">Ongoing</span></h4>
-				<p>Created at: <span id="createdAt">20-10-2017 09:00</span></p>
+				<p><i class="fa fa-clock-o"></i>&nbsp; <span id="createdAt">20-10-2017 09:00</span></p>
+				<p><i class="fa fa-user"></i>&nbsp; <span id="createdBy">Tom Snelling</span></p>
 				<div class="tags">
 					<span class="badge badge-secondary">printer</span>
 					<span class="badge badge-secondary">hardware</span>
@@ -62,7 +93,7 @@
 				<hr>
 
 				<button type="button" class="btn btn-secondary w-100" id="button-edit">Edit this issue</button>
-				<button type="button" class="btn btn-primary w-100" id="button-resolved">Mark as resolved</button>
+				<button type="button" class="btn btn-primary w-100" id="button-resolved" data-toggle="modal" data-target="#resolved-modal">Mark as resolved</button>
 			</div>
 			<div class="col-9">
 				<form>
@@ -73,14 +104,10 @@
 								<input type="text" class="form-control" id="callerName" value="John Smith" disabled>
 							</div>
 							<div class="col">
-								<label for="createdBy">Created by</label>
-								<input type="text" class="form-control" id="createdBy" value="Tom Snelling" disabled>
+								<label for="staffEmail">Contact email</label>
+								<input type="text" class="form-control" id="staffEmail" value="john.smith@internalemail.com" disabled>
 							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="staffEmail">Contact email</label>
-						<input type="text" class="form-control" id="staffEmail" value="john.smith@internalemail.com" disabled>
 					</div>
 					<div class="form-group">
 						<label for="staffEmail">Issue classification</label>
