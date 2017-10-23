@@ -51,22 +51,30 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col">
-				<h2><i class="fa fa-plus"></i> Create a new ticket</h2>
+			<div class="col-sm-3 problem-metadata">
+				<h2><i class="fa fa-plus"></i> New ticket</h2>
+				<div class="form-group">
+					<label for="created-by">Created by</label>
+					<h4 id="created-by"></h4>
+				</div>
 				<hr>
-
+				<button type="button" class="btn btn-primary w-100" id="button-create" style="float: right;">Create issue</button>
+			</div>
+			<div class="col-sm-9">
 				<form>
-					<div class="form-group">
-						<label for="created-by">Created by</label>
-						<h4 id="created-by"></h4>
-					</div>
-					<div class="form-group">
-						<label for="callerName">Caller name</label>
-						<input type="text" class="form-control" id="callerName">
-					</div>
-					<div class="form-group">
-						<label for="staffEmail">Contact email</label>
-						<input type="email" class="form-control" id="staffEmail">
+					<div class="row">
+						<div class="col">
+							<div class="form-group">
+								<label for="callerName">Caller name</label>
+								<input type="text" class="form-control" id="callerName">
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group">
+								<label for="staffEmail">Contact email</label>
+								<input type="email" class="form-control" id="staffEmail">
+							</div>
+						</div>
 					</div>
 				</form>
 
@@ -81,7 +89,7 @@
 				</div>
 
 				<label>Issue classification</label>
-				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+				<ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
 					<li class="nav-item">
 						<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#hardware" role="tab" aria-controls="pills-home" aria-expanded="true">Hardware</a>
 					</li>
@@ -145,7 +153,6 @@
 						</form>
 					</div>
 				</div>
-				<button type="button" class="btn btn-primary" id="button-create" style="float: right;">Create issue</button>
 			</div>
 		</div>
 	</div>
