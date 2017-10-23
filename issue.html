@@ -27,7 +27,7 @@
 					<a class="nav-link" href="index.html">Existing tickets</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="new.html">New Ticket</a>
+					<a class="nav-link" href="new.html">New ticket</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="analytics.html">Analytics</a>
@@ -83,7 +83,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-3 problem-metadata">
+			<div class="col-md-3 problem-metadata">
 				<h2><i class="fa fa-ticket"></i> #<span id="problemId">1234</span></h2>
 				<h4>Status: <span class="orange">Ongoing</span></h4>
 				<p><i class="fa fa-clock-o"></i>&nbsp; <span id="createdAt">20-10-2017 09:00</span></p>
@@ -98,17 +98,21 @@
 				<button type="button" class="btn btn-secondary w-100" id="button-edit">Edit this issue</button>
 				<button type="button" class="btn btn-primary w-100" id="button-resolved" data-toggle="modal" data-target="#resolved-modal">Mark as resolved</button>
 			</div>
-			<div class="col-9">
+			<div class="col-md-9">
 				<form>
 					<div class="form-group">
 						<div class="row">
-							<div class="col">
-								<label for="callerName">Caller name</label>
-								<input type="text" class="form-control" id="callerName" value="John Smith" disabled>
+							<div class="col-sm">
+								<div class="form-group">
+									<label for="callerName">Caller name</label>
+									<input type="text" class="form-control" id="callerName" value="John Smith" disabled>
+								</div>
 							</div>
-							<div class="col">
-								<label for="staffEmail">Contact email</label>
-								<input type="text" class="form-control" id="staffEmail" value="john.smith@internalemail.com" disabled>
+							<div class="col-sm">
+								<div class="form-group">
+									<label for="staffEmail">Contact email</label>
+									<input type="text" class="form-control" id="staffEmail" value="john.smith@internalemail.com" disabled>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -125,19 +129,19 @@
 		    			<input type="text" class="form-control" id="operatingsystem" disabled>
 					</div>
 					<div class="row">
-						<div class="col">
+						<div class="col-sm">
 							<div class="form-group">
 								<label for="software-name">Software name</label>
 				    			<input type="text" class="form-control" id="software-name" disabled>
 							</div>
 						</div>
-						<div class="col">
+						<div class="col-sm">
 							<div class="form-group">
 								<label for="software-version">Software version</label>
 				    			<input type="text" class="form-control" id="software-version" disabled>
 							</div>
 						</div>
-						<div class="col">
+						<div class="col-sm">
 							<div class="form-group">
 								<label for="userName">Software license code</label>
 								<input type="text" class="form-control" id="SoftwareIssueNumber" disabled>
