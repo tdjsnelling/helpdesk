@@ -32,6 +32,14 @@
 	margin-bottom: 15px;
 }
 
+.close-issue {
+	padding-left: 0 !important;
+}
+
+.nav-item {
+	display: flex;
+}
+
 .green {
 	color: #2ecc71;
 }
