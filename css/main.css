@@ -28,6 +28,9 @@
 	padding: 4px 6px;
 }
 
+.problem-metadata {
+	animation-duration: 0.75s;
+}
 .problem-metadata > * {
 	margin-bottom: 15px;
 }
