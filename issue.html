@@ -7,6 +7,7 @@
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/moment.min.js"></script>
 	<script src="js/view-issue.js"></script>
 	<script src="js/common.js"></script>
 
@@ -81,15 +82,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3 problem-metadata">
-				<h2><i class="fa fa-ticket"></i> #<span id="problemId">1234</span></h2>
-				<h4>Status: <span class="orange">Ongoing</span></h4>
-				<p><i class="fa fa-clock-o"></i>&nbsp; <span id="createdAt">20-10-2017 09:00</span></p>
-				<p><i class="fa fa-user"></i>&nbsp; <span id="createdBy">Tom Snelling</span></p>
-				<div class="tags">
-					<span class="badge badge-secondary">printer</span>
-					<span class="badge badge-secondary">hardware</span>
-					<span class="badge badge-secondary">jammed</span>
-				</div>
+				<h2><i class="fa fa-ticket"></i> #<span id="problemId"></span></h2>
+				<h4>Status: <span id="status"></span></h4>
+				<p><i class="fa fa-clock-o"></i>&nbsp; <span id="createdAt"></span></p>
+				<p><i class="fa fa-user"></i>&nbsp; <span id="createdBy"></span></p>
+				<div class="tags"></div>
 				<hr>
 
 				<button type="button" class="btn btn-secondary w-100" id="button-edit">Edit this issue</button>
@@ -102,56 +99,56 @@
 							<div class="col-sm">
 								<div class="form-group">
 									<label for="callerName">Caller name</label>
-									<input type="text" class="form-control" id="callerName" value="John Smith" disabled>
+									<input type="text" class="form-control" id="callerName" disabled>
 								</div>
 							</div>
 							<div class="col-sm">
 								<div class="form-group">
-									<label for="staffEmail">Contact email</label>
-									<input type="text" class="form-control" id="staffEmail" value="john.smith@internalemail.com" disabled>
+									<label for="callerEmail">Contact email</label>
+									<input type="text" class="form-control" id="callerEmail" disabled>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="staffEmail">Issue classification</label>
-						<input type="text" class="form-control" id="staffEmail" value="Hardware" disabled>
+						<label for="problemClassification">Issue classification</label>
+						<input type="text" class="form-control" id="problemClassification" disabled>
 					</div>
 					<div class="form-group">
-						<label for="userName">Hardware serial number</label>
-						<input type="text" class="form-control" id="HardwareSerialNumber" value="123890XYZ" disabled>
+						<label for="serialNumber">Hardware serial number</label>
+						<input type="text" class="form-control" id="serialNumber" disabled>
 					</div>
 					<div class="form-group">
-						<label for="operatingsystem">Operating system</label>
-		    			<input type="text" class="form-control" id="operatingsystem" disabled>
+						<label for="operatingSystem">Operating system</label>
+		    			<input type="text" class="form-control" id="operatingSystem" disabled>
 					</div>
 					<div class="row">
 						<div class="col-sm">
 							<div class="form-group">
-								<label for="software-name">Software name</label>
-				    			<input type="text" class="form-control" id="software-name" disabled>
+								<label for="softwareName">Software name</label>
+				    			<input type="text" class="form-control" id="softwareName" disabled>
 							</div>
 						</div>
 						<div class="col-sm">
 							<div class="form-group">
-								<label for="software-version">Software version</label>
-				    			<input type="text" class="form-control" id="software-version" disabled>
+								<label for="softwareVersion">Software version</label>
+				    			<input type="text" class="form-control" id="softwareVersion" disabled>
 							</div>
 						</div>
 						<div class="col-sm">
 							<div class="form-group">
-								<label for="userName">Software license code</label>
-								<input type="text" class="form-control" id="SoftwareIssueNumber" disabled>
+								<label for="softwareLicense">Software license code</label>
+								<input type="text" class="form-control" id="softwareLicense" disabled>
 							</div>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="problem-summary">Problem summary</label>
-		    			<input type="text" class="form-control" id="problem-summary" value="Documents not printing." disabled>
+						<label for="problemSummary">Problem summary</label>
+		    			<input type="text" class="form-control" id="problemSummary" value="Documents not printing." disabled>
 					</div>
 					<div class="form-group">
-						<label for="staffNumber">Problem details</label>
-						<textarea class="form-control" rows="5" id="SoftwareIssue" disabled>Documents are successfully being sent to the printer, but nothing is ever printed.</textarea>
+						<label for="problemDetail">Problem details</label>
+						<textarea class="form-control" rows="5" id="problemDetail" disabled>Documents are successfully being sent to the printer, but nothing is ever printed.</textarea>
 					</div>
 				</form>
 			</div>

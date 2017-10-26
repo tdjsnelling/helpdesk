@@ -12,7 +12,37 @@ $(document).ready(function() {
 	setTimeout(function() {
 		var id = '#issue-link-' + getParameterByName('id');
 		$(id).addClass('active');
-	}, 50);
+	}, 20);
+
+	let loadedIssue;
+	for (i in issues) {
+		if (issues[i].id == getParameterByName('id')) {
+			loadedIssue = issues[i];
+		}
+	}
+
+	$('#problemId').text(loadedIssue.id);
+	$("#status").text(loadedIssue.status);
+	$('#createdAt').text(moment(loadedIssue.createdAt).format('DD-MM-YYYY HH:mm'));
+	$('#createdBy').text(loadedIssue.people.createdBy);
+
+	var tags = loadedIssue.details.tags.split(', ');
+	for (i in tags) {
+		$('.tags').append($('<span class="badge badge-secondary">' + tags[i] + '</span>'));
+	}
+
+	$('#callerName').val(loadedIssue.people.callerName);
+	$("#callerEmail").val(loadedIssue.people.callerEmail);
+
+	$('#problemClassification').val(loadedIssue.details.problemClassification);
+	$('#serialNumber').val(loadedIssue.details.serialNumber);
+	$('#operatingSystem').val(loadedIssue.details.operatingSystem);
+	$('#softwareName').val(loadedIssue.details.softwareName);
+	$('#softwareVersion').val(loadedIssue.details.softwareVersion);
+	$('#softwareLicense').val(loadedIssue.details.softwareLicense);
+	$('#problemSummary').val(loadedIssue.details.problemSummary);
+	$('#problemDetail').val(loadedIssue.details.problemDetail);
+
 });
 
 $(document).on('click', '#button-edit', function() {
