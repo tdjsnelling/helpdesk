@@ -2,7 +2,7 @@ let openIssues;
 
 var issues = [
 	{
-		id: 1234,
+		id: "1234",
 		createdAt: 1508502140338,
 		status: "ongoing",
 		people: {
@@ -31,7 +31,7 @@ var issues = [
 		}
 	},
 	{
-		id: 1235,
+		id: "1235",
 		createdAt: 1508502140786,
 		status: "pending",
 		people: {

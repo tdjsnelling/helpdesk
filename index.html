@@ -8,6 +8,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/moment.min.js"></script>
+	<script src="js/fuse.min.js"></script>
 	<script src="js/common.js"></script>
 	<script src="js/all-issues.js"></script>
 
@@ -56,13 +57,7 @@
 				<h2><i class="fa fa-ticket"></i> Tickets</h2>
 			</div>
 			<div class="col-md-6">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Find a problem...">
-					<span class="input-group-btn">
-						<button class="btn btn-primary" type="button">Search</button>
-						<button class="btn btn-primary" type="button"><i class="fa fa-question"></i></button>
-					</span>
-				</div>
+				<input type="text" class="form-control" id="searchInput" placeholder="Find a problem...">
 			</div>
 		</div>
 		<hr>

@@ -1,5 +1,6 @@
-$(document).ready(function() {
-	for (i in issues) {
+function populate(issuesList) {
+	$('.list-group-item-action').remove();
+	for (i in issuesList) {
 		$('#all-issues').append($('<a href="#" class="list-group-item list-group-item-action flex-column align-items-start"> \
 						<div class="d-flex flex-row"> \
 							<div class="p-2 col"><b>' + issues[i].id + '</b></div> \
@@ -17,6 +18,10 @@ $(document).ready(function() {
 			$('#status-' + issues[i].id).addClass('orange');
 		}
 	}
+}
+
+$(document).ready(function() {
+	populate(issues);
 });
 
 $(document).on('click', '.list-group-item-action', function() {
@@ -30,4 +35,30 @@ $(document).on('click', '.list-group-item-action', function() {
 	}
 
 	location.href = 'issue.html?id=' + id;
+});
+
+var searchOptions = {
+	shouldSort: true,
+	threshold: 0.2,
+	location: 0,
+	distance: 100,
+	maxPatternLength: 32,
+	minMatchCharLength: 1,
+	keys: [
+		"id",
+		"details.problemType",
+		"details.problemSummary"
+	]
+};
+var fuse = new Fuse(issues, searchOptions);
+
+$(document).on('input', '#searchInput', function() {
+	if ($(this).val() != "") {
+		var result = fuse.search($(this).val());
+		console.log(result)
+		populate(result);
+	}
+	else {
+		populate(issues);
+	}
 });
