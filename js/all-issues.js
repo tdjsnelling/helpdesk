@@ -34,7 +34,7 @@ $(document).on('click', '.list-group-item-action', function() {
 		localStorage.setItem('openIssues', JSON.stringify(openIssues));
 	}
 
-	location.href = 'issue.html?id=' + id;
+	location.href = 'ticket.html?id=' + id;
 });
 
 var searchOptions = {
@@ -46,6 +46,7 @@ var searchOptions = {
 	minMatchCharLength: 1,
 	keys: [
 		"id",
+		"status",
 		"details.problemType",
 		"details.problemSummary"
 	]
@@ -55,7 +56,6 @@ var fuse = new Fuse(issues, searchOptions);
 $(document).on('input', '#searchInput', function() {
 	if ($(this).val() != "") {
 		var result = fuse.search($(this).val());
-		console.log(result)
 		populate(result);
 	}
 	else {

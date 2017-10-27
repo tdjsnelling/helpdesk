@@ -57,10 +57,10 @@ $(document).on('click', '#button-edit', function() {
 		$(el).prop('disabled', function(i, v) { return !v; });
 	});
 
-	if ($("#button-edit").text() == 'Edit this issue') {
+	if ($("#button-edit").text() == 'Edit this ticket') {
 		$("#button-edit").text('Save changes');
 	}
 	else {
-		$("#button-edit").text('Edit this issue');
+		$("#button-edit").text('Edit this ticket');
 	}
 });

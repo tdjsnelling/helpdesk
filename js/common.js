@@ -68,6 +68,10 @@ $(document).ready(function() {
 	for (i in openIssues) {
 		$('ul.navbar-nav').append($('<li class="nav-item"><a class="nav-link issue-link" href="#" id="issue-link-' + openIssues[i] + '">#' + openIssues[i] + '</a><a class="nav-link close-issue" href="#"><i class="fa fa-times fa-small"></a></i></li>'))
 	}
+
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	});
 });
 
 $(document).on('change', '#user-select', function() {
@@ -76,7 +80,7 @@ $(document).on('change', '#user-select', function() {
 
 $(document).on('click', '.issue-link', function() {
 	var id = $(this).attr('id').split('-')[2];
-	location.href = 'issue.html?id=' + id;
+	location.href = 'ticket.html?id=' + id;
 });
 
 $(document).on('click', '.close-issue', function() {

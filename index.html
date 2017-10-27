@@ -57,7 +57,10 @@
 				<h2><i class="fa fa-ticket"></i> Tickets</h2>
 			</div>
 			<div class="col-md-6">
-				<input type="text" class="form-control" id="searchInput" placeholder="Find a problem...">
+				<div class="input-group">
+					<input type="text" class="form-control" id="searchInput" placeholder="Find a ticket...">
+					<span class="input-group-addon" data-toggle="tooltip" data-placement="bottom" title="Search by issue number, status, type or summary"><i class="fa fa-question" ></i></span>
+				</div>
 			</div>
 		</div>
 		<hr>
@@ -67,7 +70,7 @@
 				<div class="list-group" id="all-issues">
 					<div class="list-group-item flex-column align-items-start list-heading">
 						<div class="d-flex flex-row">
-							<div class="p-2 col"><b>Problem number</b></div>
+							<div class="p-2 col"><b>Ticket number</b></div>
 							<div class="p-2 col"><b>Time submitted</b></div>
 							<div class="p-2 col"><b>Status</b></div>
 							<div class="p-2 col"><b>Problem type</b></div>
