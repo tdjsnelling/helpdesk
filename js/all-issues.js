@@ -4,11 +4,18 @@ $(document).ready(function() {
 						<div class="d-flex flex-row"> \
 							<div class="p-2 col"><b>' + issues[i].id + '</b></div> \
 							<div class="p-2 col">' + moment(issues[i].createdAt).format('DD-MM-YYYY HH:mm') + '</div> \
-							<div class="p-2 col">' + issues[i].status + '</div> \
+							<div class="p-2 col"><span id="status-' + issues[i].id + '">' + issues[i].status + '</span></div> \
 							<div class="p-2 col">' + issues[i].details.problemType + '</div> \
 							<div class="p-2 col no-overflow">' + issues[i].details.problemSummary + '</div> \
 						</div> \
 					</a>'));
+
+		if (issues[i].status == 'ongoing') {
+			$('#status-' + issues[i].id).addClass('green');
+		}
+		else if (issues[i].status == 'pending') {
+			$('#status-' + issues[i].id).addClass('orange');
+		}
 	}
 });
 

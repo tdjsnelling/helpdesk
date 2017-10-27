@@ -43,6 +43,13 @@ $(document).ready(function() {
 	$('#problemSummary').val(loadedIssue.details.problemSummary);
 	$('#problemDetail').val(loadedIssue.details.problemDetail);
 
+	if (loadedIssue.status == 'ongoing') {
+		$('#status').addClass('green');
+	}
+	else if (loadedIssue.status == 'pending') {
+		$('#status').addClass('orange');
+	}
+
 });
 
 $(document).on('click', '#button-edit', function() {
