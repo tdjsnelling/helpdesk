@@ -8,7 +8,6 @@
 }
 
 .no-overflow {
-	max-width: 197px;
 	white-space: nowrap;
 	overflow: hidden;	
 	text-overflow: ellipsis;
@@ -50,6 +49,10 @@
 
 .fa-small {
 	font-size: 12px;
+}
+
+.sort-button {
+	cursor: pointer;
 }
 
 .green {

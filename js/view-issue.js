@@ -14,6 +14,8 @@ $(document).ready(function() {
 		$(id).addClass('active');
 	}, 20);
 
+	$('#solved-by').val(localStorage.getItem('currentUser'));
+
 	let loadedIssue;
 	for (i in issues) {
 		if (issues[i].id == getParameterByName('id')) {
