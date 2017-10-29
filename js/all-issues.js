@@ -31,19 +31,19 @@ function populate(issuesList, sorting) {
 	for (i in issuesList) {
 		$('#all-issues').append($('<a href="#" class="list-group-item list-group-item-action flex-column align-items-start"> \
 						<div class="d-flex flex-row"> \
-							<div class="p-2 col"><b>' + issues[i].id + '</b></div> \
-							<div class="p-2 col">' + moment(issues[i].createdAt).format('DD-MM-YYYY HH:mm') + '</div> \
-							<div class="p-2 col"><span id="status-' + issues[i].id + '">' + issues[i].status + '</span></div> \
-							<div class="p-2 col no-overflow">' + issues[i].details.problemType + '</div> \
-							<div class="p-2 col no-overflow">' + issues[i].details.problemSummary + '</div> \
+							<div class="p-2 col"><b>' + issuesList[i].id + '</b></div> \
+							<div class="p-2 col">' + moment(issuesList[i].createdAt).format('DD-MM-YYYY HH:mm') + '</div> \
+							<div class="p-2 col"><span id="status-' + issuesList[i].id + '">' + issuesList[i].status + '</span></div> \
+							<div class="p-2 col no-overflow">' + issuesList[i].details.problemType + '</div> \
+							<div class="p-2 col no-overflow">' + issuesList[i].details.problemSummary + '</div> \
 						</div> \
 					</a>'));
 
-		if (issues[i].status == 'ongoing') {
-			$('#status-' + issues[i].id).addClass('green');
+		if (issuesList[i].status == 'ongoing') {
+			$('#status-' + issuesList[i].id).addClass('green');
 		}
-		else if (issues[i].status == 'pending') {
-			$('#status-' + issues[i].id).addClass('orange');
+		else if (issuesList[i].status == 'pending') {
+			$('#status-' + issuesList[i].id).addClass('orange');
 		}
 	}
 }
