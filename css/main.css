@@ -55,6 +55,13 @@
 	cursor: pointer;
 }
 
+.btn-grow {
+	transition: 0.3s;
+}
+.btn-grow:hover {
+	padding-left: 50px;
+}
+
 .green {
 	color: #2ecc71;
 }
