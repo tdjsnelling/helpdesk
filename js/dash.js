@@ -8,7 +8,7 @@ $(document).ready(function() {
 			var thisIssue = issues.filter(function( obj ) {
 				return obj.id == openIssues[i];
 			});
-			$('#open-issues').append($('<div class="card bg-light mb-3 w-100"> \
+			$('#open-issues').append($('<div class="card mb-3 w-100"> \
   											<div class="card-header list-heading"> \
   												<a href="ticket.html?id=' + thisIssue[0].id + '" class="btn btn-primary btn-grow">#' + thisIssue[0].id + '&nbsp; <i class="fa fa-arrow-right"></i></a> \
   											</div> \
