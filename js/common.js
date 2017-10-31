@@ -88,5 +88,11 @@ $(document).on('click', '.close-issue', function() {
 	var index = openIssues.indexOf(id);
 	openIssues.splice(index, 1);
 	localStorage.setItem('openIssues', JSON.stringify(openIssues));
-	location.href = 'all.html';
+	
+	if (location.href.indexOf('ticket.html') != -1) {
+		location.href = 'all.html';
+	}
+	else {
+		location.reload();
+	}
 });
