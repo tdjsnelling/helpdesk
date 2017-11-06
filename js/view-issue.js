@@ -35,6 +35,7 @@ $(document).ready(function() {
 
 	$('#callerName').val(loadedIssue.people.callerName);
 	$("#callerEmail").val(loadedIssue.people.callerEmail);
+	$("#assignedSpecialist").val(loadedIssue.people.specialist);
 
 	$('#problemClassification').val(loadedIssue.details.problemClassification);
 	$('#serialNumber').val(loadedIssue.details.serialNumber);

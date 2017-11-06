@@ -8,7 +8,8 @@ var issues = [
 		people: {
 			createdBy: "Tom Snelling",
 			callerName: "John Smith",
-			callerEmail: "john.smith@internalemail.com"
+			callerEmail: "john.smith@internalemail.com",
+			specialist: null
 		},
 		details: {
 			isNewProblem: true,
@@ -37,7 +38,8 @@ var issues = [
 		people: {
 			createdBy: "Dan Page",
 			callerName: "James Simmons",
-			callerEmail: "james.simmons@internalemail.com"
+			callerEmail: "james.simmons@internalemail.com",
+			specialist: null
 		},
 		details: {
 			isNewProblem: true,
