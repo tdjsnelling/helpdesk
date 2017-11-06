@@ -62,6 +62,10 @@
 	padding-left: 50px;
 }
 
+#followup-id {
+	display: none;
+}
+
 .green {
 	color: #2ecc71;
 }

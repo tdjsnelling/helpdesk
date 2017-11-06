@@ -13,6 +13,7 @@ var issues = [
 		},
 		details: {
 			isNewProblem: true,
+			followupOf: null,
 			problemClassification: "hardware",
 			problemType: "Printer issue",
 			serialNumber: "123890XYZ",
@@ -43,6 +44,7 @@ var issues = [
 		},
 		details: {
 			isNewProblem: true,
+			followupOf: null,
 			problemClassification: "software",
 			problemType: "Software crash",
 			serialNumber: null,

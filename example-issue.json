@@ -10,6 +10,7 @@
 	},
 	"details": {
 		"isNewProblem": true,
+		"followupOf": null,
 		"problemClassification": "hardware",
 		"problemType": "Printer issue",
 		"serialNumber": "123890XYZ",

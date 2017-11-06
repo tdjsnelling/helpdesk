@@ -28,6 +28,13 @@ $(document).ready(function() {
 	$('#createdAt').text(moment(loadedIssue.createdAt).format('DD-MM-YYYY HH:mm'));
 	$('#createdBy').text(loadedIssue.people.createdBy);
 
+	if (loadedIssue.details.followupOf != null) {
+		$('#followupOf').text('#' + loadedIssue.details.followupOf);
+	}
+	else {
+		$('#followupOf').text('Not a follow-up');
+	}
+
 	var tags = loadedIssue.details.tags.split(', ');
 	for (i in tags) {
 		$('.tags').append($('<span class="badge badge-secondary">' + tags[i] + '</span>'));
