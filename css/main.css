@@ -3,6 +3,13 @@
 	padding-bottom: 40px;
 }
 
+.logout-button {
+	margin-left: 20px;
+}
+.logout-button:hover {
+	color: #007bff;
+}
+
 .list-heading {
 	background: #f0f0f0;
 }

@@ -38,3 +38,11 @@
 	* Make
 
 * Authorised software
+
+# TODO:
+* Logout button
+* Take current user from login page
+* Problem type dropdown with refinements
+* Add-on in recurring issue input
+* Do some themeing
+* Add resolution details to view ticket
