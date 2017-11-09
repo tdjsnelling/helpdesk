@@ -18,3 +18,21 @@ $(document).on('change', "input[name='ticket-type']", function() {
 		$('#followup-id').hide();
 	}
 });
+
+$(document).on('change', "#problem-type-1", function() {
+	if ($(this).val() != 'Please select...') {
+		$('#problem-type-2').show();
+	}
+	else {
+		$('#problem-type-2').hide();
+		$('#problem-type-3').hide();
+	}
+});
+$(document).on('change', "#problem-type-2", function() {
+	if ($(this).val() != 'Please select...') {
+		$('#problem-type-3').show();
+	}
+	else {
+		$('#problem-type-3').hide();
+	}
+});

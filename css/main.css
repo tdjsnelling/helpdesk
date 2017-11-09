@@ -25,6 +25,9 @@
 }
 
 .custom-select {
+	margin-right: 15px;
+}
+.block-select {
 	display: block;
 }
 
