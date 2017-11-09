@@ -66,7 +66,7 @@ var issues = [
 ]
 
 $(document).ready(function() {
-	$('#user-select').val(localStorage.getItem('currentUser'));
+	$('#current-user').text(localStorage.getItem('username'))
 
 	openIssues = JSON.parse(localStorage.getItem('openIssues'));
 	for (i in openIssues) {
@@ -76,10 +76,6 @@ $(document).ready(function() {
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
 	});
-});
-
-$(document).on('change', '#user-select', function() {
-	localStorage.setItem('currentUser', $('#user-select').val());
 });
 
 $(document).on('click', '.issue-link', function() {

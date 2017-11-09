@@ -40,9 +40,8 @@
 * Authorised software
 
 # TODO:
-* Logout button
-* Take current user from login page
+* Logout button (done)
+* Take current user from login page (done)
 * Problem type dropdown with refinements
-* Add-on in recurring issue input
 * Do some themeing
-* Add resolution details to view ticket
+* Add resolution details to view ticket (done)

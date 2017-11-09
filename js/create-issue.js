@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('#created-by').text(localStorage.getItem('currentUser'));
+	$('#created-by').text(localStorage.getItem('username'));
 });
 
 $(document).on('click', '#button-create', function() {

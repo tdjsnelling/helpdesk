@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$(id).addClass('active');
 	}, 20);
 
-	$('#solved-by').val(localStorage.getItem('currentUser'));
+	$('#solved-by').val(localStorage.getItem('username'));
 
 	let loadedIssue;
 	for (i in issues) {
@@ -52,6 +52,8 @@ $(document).ready(function() {
 	$('#softwareLicense').val(loadedIssue.details.softwareLicense);
 	$('#problemSummary').val(loadedIssue.details.problemSummary);
 	$('#problemDetail').val(loadedIssue.details.problemDetail);
+
+	$('#resolutionDetail').val(loadedIssue.solution.solutionDetail);
 
 	if (loadedIssue.status == 'ongoing') {
 		$('#status').addClass('green');
