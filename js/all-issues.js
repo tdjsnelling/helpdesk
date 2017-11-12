@@ -22,10 +22,10 @@ function populate(issuesList, sorting) {
 		issuesList.sort(sortBy('id', false, parseInt));
 	}
 	else if (sorting == 'statusDesc') {
-		issuesList.sort(sortBy('id', true, null));
+		issuesList.sort(sortBy('status', true, null));
 	}
 	else if (sorting == 'statusAsc') {
-		issuesList.sort(sortBy('id', false, null));
+		issuesList.sort(sortBy('status', false, null));
 	}
 
 	for (i in issuesList) {
@@ -39,11 +39,14 @@ function populate(issuesList, sorting) {
 						</div> \
 					</a>'));
 
-		if (issuesList[i].status == 'ongoing') {
+		if (issuesList[i].status == 'solved') {
 			$('#status-' + issuesList[i].id).addClass('green');
 		}
-		else if (issuesList[i].status == 'pending') {
+		else if (issuesList[i].status == 'ongoing') {
 			$('#status-' + issuesList[i].id).addClass('orange');
+		}
+		else if (issuesList[i].status == 'pending') {
+			$('#status-' + issuesList[i].id).addClass('red');
 		}
 	}
 }

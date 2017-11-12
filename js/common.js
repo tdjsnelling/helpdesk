@@ -62,6 +62,99 @@ var issues = [
 			solvedBy: null,
 			solutionDetail: null
 		}
+	},
+	{
+		id: "1236",
+		createdAt: 1508502140338,
+		status: "solved",
+		people: {
+			createdBy: "Adam Morley",
+			callerName: "Nathan Swift",
+			callerEmail: "nathan.swift@internalemail.com",
+			specialist: "Harvey Davis"
+		},
+		details: {
+			isNewProblem: true,
+			followupOf: null,
+			problemClassification: "hardware",
+			problemType: "Laptop failure",
+			serialNumber: "1669835401",
+			operatingSystem: "Windows 7 Pro",
+			softwareName: null,
+			softwareVersion: null, 
+			softwareLicense: null,
+			problemSummary: "Laptop does not hold charge.",
+			problemDetail: "Possible battery failure. Laptop shows charging indicator but will not power on if unplugged.",
+			tags: "hardware, laptop, battery, battery failure"
+		},
+		solution: {
+			isSolved: true,
+			solvedAt: 1508502140338,
+			solvedBy: "Tom Snelling",
+			solutionDetail: "Issued replacement battery, laptop confirmed working."
+		}
+	},
+	{
+		id: "1237",
+		createdAt: 1508502140338,
+		status: "ongoing",
+		people: {
+			createdBy: "Tom Snelling",
+			callerName: "Luke Clements",
+			callerEmail: "luke.clements@internalemail.com",
+			specialist: "Ellie Tomlinson"
+		},
+		details: {
+			isNewProblem: true,
+			followupOf: null,
+			problemClassification: "software",
+			problemType: "Software not available",
+			serialNumber: null,
+			operatingSystem: "Mac OS X",
+			softwareName: "Visual Paradigm",
+			softwareVersion: null, 
+			softwareLicense: null,
+			problemSummary: "VP not installed on system",
+			problemDetail: "User reports they were previously able to access Visual Paradigm software but it is no longer available on their system.",
+			tags: "visual paradigm"
+		},
+		solution: {
+			isSolved: false,
+			solvedAt: null,
+			solvedBy: null,
+			solutionDetail: null
+		}
+	},
+	{
+		id: "1238",
+		createdAt: 1508502140338,
+		status: "ongoing",
+		people: {
+			createdBy: "Tom Snelling",
+			callerName: "Luke Clements",
+			callerEmail: "luke.clements@internalemail.com",
+			specialist: "Ellie Tomlinson"
+		},
+		details: {
+			isNewProblem: false,
+			followupOf: "1237",
+			problemClassification: "software",
+			problemType: "Software not available",
+			serialNumber: null,
+			operatingSystem: "Mac OS X",
+			softwareName: "Visual Paradigm",
+			softwareVersion: null, 
+			softwareLicense: null,
+			problemSummary: "VP not installed on system",
+			problemDetail: "User still unable to access Visual Paradigm - essential this is sorted soon.",
+			tags: "visual paradigm"
+		},
+		solution: {
+			isSolved: false,
+			solvedAt: null,
+			solvedBy: null,
+			solutionDetail: null
+		}
 	}
 ]
 

@@ -53,13 +53,20 @@ $(document).ready(function() {
 	$('#problemSummary').val(loadedIssue.details.problemSummary);
 	$('#problemDetail').val(loadedIssue.details.problemDetail);
 
-	$('#resolutionDetail').val(loadedIssue.solution.solutionDetail);
+	$('#resolutionDetails').val(loadedIssue.solution.solutionDetail);
 
-	if (loadedIssue.status == 'ongoing') {
+	if (loadedIssue.status == 'solved') {
 		$('#status').addClass('green');
 	}
-	else if (loadedIssue.status == 'pending') {
+	else if (loadedIssue.status == 'ongoing') {
 		$('#status').addClass('orange');
+	}
+	else if (loadedIssue.status == 'pending') {
+		$('#status').addClass('red');
+	}
+
+	if (loadedIssue.solution.isSolved) {
+		$('#button-resolved').hide();
 	}
 
 });
